@@ -7,9 +7,6 @@
     --secondery-2:#E5D4FF ;
     --bakcground: #F1EAFF ;
 }
-html{
-    overflow-x: hidden;
-}
 
 /* *{
     border: 2px solid black;
@@ -19,7 +16,6 @@ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box; 
-   
     overflow-x: hidden;
     font-family: 'Dancing Script', cursive;
     font-family: 'Roboto', sans-serif;
@@ -40,6 +36,7 @@ body {
     padding: 10px 30px;
 background-color: var(--secondery-2);
 box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+overflow-x: hidden;
 
 }
 .nav-ul{
