@@ -20,3 +20,7 @@ window.addEventListener("click", function (e) {
         closeModalFunc();
     }
 });
+
+
+
+const
