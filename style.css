@@ -7,18 +7,20 @@
     --secondery-2:#E5D4FF ;
     --bakcground: #F1EAFF ;
 }
+html{
+    overflow-x: hidden;
+}
+
 /* *{
     border: 2px solid black;
 } */
 
-
 body {
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
+    box-sizing: border-box; 
    
+    overflow-x: hidden;
     font-family: 'Dancing Script', cursive;
     font-family: 'Roboto', sans-serif;
 }
@@ -154,6 +156,6 @@ color: rgb(71, 71, 240);
     background-color: whitesmoke;
 }
 
-.close-svg-button{
+/* .ionicon [name="close-outline"]{
     display: none;
-}
+} */
