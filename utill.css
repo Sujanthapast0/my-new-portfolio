@@ -12,3 +12,9 @@ justify-content: center;
 .space-between{
     justify-content: space-between;
 }
+
+
+.ionicon{
+    height: 40px;
+    width: 40px;
+}

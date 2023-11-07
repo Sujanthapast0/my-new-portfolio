@@ -1,32 +1,34 @@
-body{
+body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     height: 100%;
     width: 100%;
-   
-}
-
-.navbar .profile-img-div img{
-height: 40px;
-border-radius: 10px;
 
 }
 
-.nav-heading{
-   padding-left: 10px;
+.navbar .profile-img-div img {
+    height: 40px;
+    border-radius: 10px;
+  border: rgba(0, 0, 0, 0.208) 4px solid;
+
 }
 
-.navbar{
-    padding: 10px 30px ;
+.nav-heading {
+    padding-left: 10px;
+}
+
+.navbar {
+    padding: 10px 30px;
 }
 
 
-.nav-ul li{
-    padding-left:20px ;
+.nav-ul li {
+    padding-left: 20px;
 }
-.nav-buttons ul li{
-list-style: none;
+
+.nav-buttons ul li {
+    list-style: none;
 }
 
 
@@ -42,7 +44,8 @@ list-style: none;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background */
     z-index: 1;
     overflow: auto;
 }
@@ -59,14 +62,14 @@ list-style: none;
 }
 
 .close {
-color: white;
+    color: white;
     font-size: 15px;
     cursor: pointer;
- position:absolute;
- top: 105%;
+    position: absolute;
+    top: 105%;
     left: 50%;
     transform: translate(-50%, -50%);
-  
+
 }
 
 #popupImage {
@@ -82,6 +85,7 @@ color: white;
         transform: translate(-50%, -50%) scale(0.5);
         opacity: 0;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1);
         opacity: 1;
@@ -102,6 +106,21 @@ color: white;
 
 /* menu svg */
 
-.menu-svg-button{
+.menu-svg-button, .close-svg-button {
+    
+    border: none;
+    background: transparent;
+    cursor: pointer;
+   
+}
+
+.menu-svg-button:active{
+  background-color: whitesmoke;
+}
+.close-svg-button:active{
+    background-color: whitesmoke;
+}
+
+.close-svg-button{
     display: none;
 }
