@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utill.css">
+</head>
+<body>
+<!-- navbar -->
+    <nav class="navbar flex space-between align-center">
+        <!-- img div -->
+        <div class="profile-img-div flex align-center" ><img src="1.jpeg" alt="" srcset="" onclick="openModal()">
+            <div class="nav-heading "> Sujan Thapa</div>
+        </div>
+
+       
+
+<div class="nav-buttons ">
+
+<ul class="nav-ul flex align-center">
+
+   <li>HOME</li>
+   <li>ABOUT ME</li>
+   <li>PORTFOLIO</li>
+   <li>CONTACT ME</li>
+
+</ul>
+
+</div>
+
+    </nav>
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal" onclick="closeModalFunc()">&times; close</span>
+            <img src="1.jpeg" alt="Image" id="popupImage">
+        </div>
+    </div>
+
+<script src="srcipt.js"></script>
+</body>
+
+</html>
