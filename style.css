@@ -18,7 +18,7 @@ border-radius: 10px;
 }
 
 .navbar{
-    padding: 0px 30px ;
+    padding: 10px 30px ;
 }
 
 
@@ -36,7 +36,7 @@ list-style: none;
 /* Add your existing CSS styles here */
 
 .modal {
-    display: bock;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -97,3 +97,11 @@ color: white;
         opacity: 0;
     }
 } */
+
+
+
+/* menu svg */
+
+.menu-svg-button{
+    display: none;
+}

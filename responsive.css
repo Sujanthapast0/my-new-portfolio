@@ -1,0 +1,58 @@
+        /* Media query for screens smaller than 768px (e.g., mobile devices) */
+        @media (max-width: 767px) {
+            .nav-buttons{
+                display: none;
+            }
+
+            .navbar{
+                padding: 10px 10px ;
+            }
+
+            .menu-svg-button{
+                display: block;
+            }
+            
+        }
+
+        /* Media query for screens between 768px and 1023px (e.g., tablets) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .menu-svg-button{
+                display: block;
+            }
+            .nav-buttons{
+                display: none;
+            }
+
+            .navbar{
+                padding: 10px 20px ;
+            }
+            
+
+        }
+
+        /* Media query for screens larger than or equal to 1024px (e.g., desktops) */
+        @media (min-width: 1024px) {
+         
+        }
+
+
+        /* Media query for smaller screens */
+        @media (max-width: 767px) {
+            .menu-svg-button{
+                display: block;
+            }
+            .nav-buttons{
+                display: none;
+            }
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 768px) {
+          
+        }
+
+        @media (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
+            /* Your landscape tablet and small desktop styles here */
+        
+          }
+          
