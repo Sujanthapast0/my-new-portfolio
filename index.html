@@ -1,86 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sujan Thapa</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sujan Thapa</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utill.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="utill.css" />
-  <link rel="stylesheet" href="responsive.css" />
-</head>
-
-<body>
-  <!-- navbar -->
-  <nav class="navbar flex space-between align-center">
-    <!-- img div -->
-    <div class="profile-img-div flex align-center">
-      <img src="1.jpeg" alt="" srcset="" onclick="openModal()" />
-      <div class="nav-heading">IDkCONUNDRUM_</div>
-    </div>
-
-    <div class="nav-buttons">
-      <ul class="nav-ul">
-        <li>
-          <a href="http://">HOME</a>
-        </li>
-        <li><a href="http://">ABOUT ME</a></li>
-        <li><a href="http://">PORTFOLIO</a></li>
-        <li><a href="http://">CONTACT ME</a></li>
-      </ul>
-    </div>
-
-    <!-- options menu button -->
-    <button class="menu-svg-button svg_button">
-      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"
-          d="M80 160h352M80 256h352M80 352h352" />
-      </svg>
-    </button>
-
-    <!-- close-menu button -->
-    <button class="close-svg-button svg_button">
-      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
-          d="M368 368L144 144M368 144L144 368" />
-      </svg>
-    </button>
-
-    <!-- popup box -->
-    <div class="modal" id="myModal">
-      <div class="modal-content">
-        <span class="close" id="closeModal" onclick="closeModalFunc()">&times; close</span>
-        <img src="1.jpeg" alt="Image" id="popupImage" />
+  <body>
+    <!-- navbar -->
+    <nav class="navbar flex space-between align-center">
+      <!-- img div -->
+      <div class="profile-img-div flex align-center">
+        <img src="1.jpeg" alt="" srcset="" onclick="openModal()" />
+        <div class="nav-heading">IDkCONUNDRUM_</div>
       </div>
-    </div>
-  </nav>
 
-  <section class="container flex justify-center align-center flex-col">
-    <div>
-      <img class="img2" src="2.jpeg" alt="" srcset="" />
-    </div>
+      <div class="nav-buttons">
+        <ul class="nav-ul">
+          <li>
+            <a href="http://">HOME</a>
+          </li>
+          <li><a href="http://">ABOUT ME</a></li>
+          <li><a href="http://">PORTFOLIO</a></li>
+          <li><a href="http://">CONTACT ME</a></li>
+        </ul>
+      </div>
 
-    <div class=" name-sec flex flex-row">
-
-      <button class="play-pause" onclick="togglePlayPause()">
-        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon-play" viewBox="0 0 512 512">
-          <path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none"
-            stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
-
+      <!-- options menu button -->
+      <button class="menu-svg-button svg_button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
           <path
-            d="M216.32 334.44l114.45-69.14a10.89 10.89 0 000-18.6l-114.45-69.14a10.78 10.78 0 00-16.32 9.31v138.26a10.78 10.78 0 0016.32 9.31z" />
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="32"
+            d="M80 160h352M80 256h352M80 352h352"
+          />
         </svg>
-
-
-        <audio id="audio" src="rickroll.mp3"></audio>
       </button>
 
-      <span> Sujan Thapa </span>
-    </div>
-  </section>
+      <!-- close-menu button -->
+      <button class="close-svg-button svg_button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+            d="M368 368L144 144M368 144L144 368"
+          />
+        </svg>
+      </button>
 
-  <script src="srcipt.js"></script>
-</body>
+      <!-- popup box -->
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close" id="closeModal" onclick="closeModalFunc()"
+            >&times; close</span
+          >
+          <img src="1.jpeg" alt="Image" id="popupImage" />
+        </div>
+      </div>
+    </nav>
 
+    <section class="container flex justify-center align-center flex-col">
+      <div>
+        <img class="img2" src="2.jpeg" alt="" srcset="" />
+      </div>
+
+      <div class="name-sec flex flex-row">
+      
+        <span class="my-name"> Sujan Thapa </span>
+      </div>
+
+      <div class="its-sujan-container flex justify-center align-center">
+        <span class="its-sujan" > its <span class="sujan">सुजान</span> </span>
+        <button class="play-pause" onclick="togglePlayPause()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon-play"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"
+              fill="none"
+              stroke="currentColor"
+              stroke-miterlimit="10"
+              stroke-width="32"
+            />
+
+            <path
+              d="M216.32 334.44l114.45-69.14a10.89 10.89 0 000-18.6l-114.45-69.14a10.78 10.78 0 00-16.32 9.31v138.26a10.78 10.78 0 0016.32 9.31z"
+            />
+          </svg>
+
+          <audio id="audio" src="rickroll.mp3"></audio>
+        </button>
+
+      </div>
+    </section>
+
+    <script src="srcipt.js"></script>
+  </body>
 </html>
