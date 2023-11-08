@@ -1,10 +1,7 @@
         /* Media query for screens smaller than 768px (e.g., mobile devices) */
         @media (max-width: 767px) {
            
-body,html{
-    overflow-x: hidden;
-     position: relative;
-}
+
 
 
             .nav-buttons {
@@ -20,6 +17,7 @@ body,html{
             .navbar {
                 padding: 10px 10px;
                 overflow-x: hidden;
+
                
             }
 
@@ -37,19 +35,20 @@ body,html{
                 gap: 20px;
                 /* height: 100vh; */
                 padding: 0%;
+                margin: 0%;
                 
             }
 
             .nav-buttons {
                 
                 font-size: 24px;
-                display: bloack;
+                display: block;
                 position: absolute;
                 width: 100%;
-                /* left: 100px;
-                top: ; */
+                left: 0;
+                top: 0;
                 background: #717171;
-                transform: translatex(100%);
+                /* transform: translatex(100%); */
                 transition: 0.3s ease all;
                 
             }
@@ -92,10 +91,7 @@ body,html{
         /* Media query for screens between 768px and 1023px (e.g., tablets) */
         @media (min-width: 768px) and (max-width: 1023px) {
          
-            body,html{
-                overflow-x: hidden;
-            }
-
+         
             .nav-buttons {
                 display: none;
 
@@ -131,13 +127,15 @@ body,html{
                 font-size: 24px;
                 display: block;
                 position: absolute;
-                width: 100%;
-                left: 0;
-                top: 0;
+                /* width: 100%; */
+                /* left: 0;
+                top: 0; */
                 background: #717171;
-                transform: translatex(100%);
+                /* transform: translatex(100%); */
                 transition: 0.3s ease all;
-
+                opacity: 0;
+                pointer-events: none;
+                visibility: 0;
             }
 
 
@@ -179,9 +177,7 @@ body,html{
         /* Media query for screens larger than or equal to 1024px (e.g., desktops) */
         @media (min-width: 1024px) {
 
-            body,html{
-                overflow-x: hidden;
-            }
+         
             .menu-svg-button,
             .close-svg-button {
                 display: none;
@@ -194,17 +190,15 @@ body,html{
 
             body,html{
                 overflow-x: hidden;
+              
             }
 
             .navbar{
                 overflow-x: hidden;
+              
             }
             .menu-svg-button,
             .close-svg-button {
-                display: block;
-            }
-
-            .nav-buttons {
                 display: block;
             }
 
@@ -224,14 +218,16 @@ body,html{
 
             .nav-buttons {
                 font-size: 24px;
-                display: bloack;
+                display: block;
                 position: absolute;
                 width: 100%;
                 left: 0;
                 top: 0;
                 background: #717171;
-
                 transition: 0.3s;
+                opacity: 0;
+                pointer-events: none;
+                visibility: 0;
             }
 
 
