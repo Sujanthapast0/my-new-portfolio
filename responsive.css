@@ -3,6 +3,7 @@
            
 body,html{
     overflow-x: hidden;
+     position: relative;
 }
 
 
@@ -19,6 +20,7 @@ body,html{
             .navbar {
                 padding: 10px 10px;
                 overflow-x: hidden;
+               
             }
 
             .menu-svg-button,
