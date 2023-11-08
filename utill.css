@@ -18,3 +18,12 @@ justify-content: center;
     height: 40px;
     width: 40px;
 }
+
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+

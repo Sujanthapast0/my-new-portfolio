@@ -29,6 +29,10 @@
 
 }
 
+/* *{
+    border: 1px solid rgba(0, 0, 0, 0.082);
+} */
+
 
 html{
     overflow-x: hidden;
@@ -193,5 +197,40 @@ font-weight: 500;
 } */
 
 
+.container{
+    /* height: 90vh; */
+    margin-top: 100px;
+}
 
+.img2{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 999rem;
+}
 
+.ionicon-play, .ionicon-pause{
+    height: 20px;
+    border: none;
+    background: transparent;
+    color: blue;
+}
+
+.ionicon-play:hover{
+   
+    filter: drop-shadow(rgba(240, 46, 169, 0.792) 1px 1px 1px);
+}
+
+.ionicon-pause:hover{
+   
+    filter: drop-shadow(rgba(240, 46, 169, 0.792) 1px 1px 1px);
+}
+
+button{
+    background: transparent;
+   border: none;
+}
+
+.name-sec{
+    margin-top: 20px;
+}
