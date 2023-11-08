@@ -229,35 +229,32 @@ font-size: 20px;
     animation: spin 12s ease-in-out infinite alternate-reverse;
 }
 /* ---------------------------------------------------- */
-
 .box {
-   
-    border: 1px dashed rgba(255,255,255,0.4);
+    border: 1px dashed rgba(255, 255, 255, 0.4);
     position: relative;
-    
-    &::before {
+}
 
-        z-index: -1;
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      border-radius: 50%;
-      border: 1px dashed rgba(255,255,255,0.4);
-      transform: scale(1.42);
-    }
-  }
-  
-  .spin-container {
+.box::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.4);
+    transform: scale(1.42);
+}
+
+.spin-container {
     width: 200px;
     height: 200px;
     animation: spin 12s ease-in-out infinite alternate;
     position: relative;
-  }
-  
-  .shape {
+}
+
+.shape {
     width: 100%;
     height: 100%;
     transition: border-radius 1s ease-out;
@@ -266,9 +263,9 @@ font-size: 20px;
     position: absolute;
     overflow: hidden;
     z-index: 5;
-  }
-  
-  .bd {
+}
+
+.bd {
     width: 142%;
     height: 142%;
     position: absolute;
@@ -288,18 +285,38 @@ font-size: 20px;
     animation: spin 12s ease-in-out infinite alternate-reverse;
     opacity: 1;
     z-index: 2;
-  }
-  
-  @keyframes morph {
-    0% {border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;} 
-    100% {border-radius: 40% 60%;} 
-  }
-  
-  @keyframes spin {
-    to {
-      transform: rotate(1turn);
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
     }
-  }
+    100% {
+        border-radius: 40% 60%;
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Vendor prefixes for iOS */
+@-webkit-keyframes morph {
+    0% {
+        -webkit-border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
+    }
+    100% {
+        -webkit-border-radius: 40% 60%;
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(1turn);
+    }
+}
 
 /* ------------------------------------------------------- */
 .ionicon-play, .ionicon-pause{
