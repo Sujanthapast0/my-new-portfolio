@@ -2,25 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&display=swap');
 
 :root{
-    --primary: #D0A2F7 ;
-    --secondery: #DCBFFF ;
-    --secondery-2:#E5D4FF ;
-    --bakcground: #F1EAFF ;
+
+    /* COLOR PALETE 1 */
+    --primary1: #D0A2F7 ;
+    --secondery1: #DCBFFF ;
+    --secondery-1:#E5D4FF ;
+    --bakcground1: #F1EAFF ;
 
 
+/* COLOR PALETE 2 */
+    --text2: #000000;
+--background2: #ffffff;
+--primary2: #8fb4ff;
+--secondary2: #ebf1ff2b;
+--accent2: #ff8f94;
 
-    --text: #000000;
---background: #ffffff;
---primary: #8fb4ff;
---secondary: #ebf1ff;
---accent: #ff8f94;
+/* COLOR PALETE 3 */
+--text3: #180b1e;
+--background3: #fdfbfe;
+--primary3: #c697d8;
+--secondary3: #e2cbec;
+--accent3: #8d3fab;
 
+
+--bg:#e9e0e0b7;
 
 }
 
-/* *{
-    border: 2px solid black;
-} */
 
 html{
     overflow-x: hidden;
@@ -35,13 +43,19 @@ body {
     overflow-x: hidden;
     font-family: 'Dancing Script', cursive;
     font-family: 'Roboto', sans-serif;
+    background-color: var(--bg);
 }
 
 .navbar .profile-img-div img {
     height: 40px;
     border-radius: 10px;
   border: rgba(0, 0, 0, 0.208) 3px solid;
+transition: all ease 200ms;
+}
 
+.navbar .profile-img-div img:hover{
+    border:  rgba(255, 255, 255, 0.452) 3px solid;
+    box-shadow: rgba(240, 46, 169, 0.792) 1px 1px 10px;
 }
 
 .nav-heading {
@@ -50,8 +64,7 @@ body {
 
 .navbar {
     padding: 10px 30px;
-background-color: var(--secondery-2);
-box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+background-color: transparent;
 overflow-x: hidden;
 
 }
@@ -70,17 +83,22 @@ font-weight: 500;
  transition: all ease 300ms;
 }
 
-.nav-ul li:hover{
-color: rgb(71, 71, 240);
-
-}
 
 
 .nav-buttons ul li {
     list-style: none;
 }
 
+.nav-buttons ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
 
+.nav-ul li a:hover{
+    color: rgb(71, 71, 240);
+    
+    }
+    
 
 
 /* --------------------------------- */
@@ -160,7 +178,7 @@ color: rgb(71, 71, 240);
     border: none;
     background: transparent;
     cursor: pointer;
-   
+   border-radius: 20px;
 }
 
 .menu-svg-button:active{
