@@ -261,6 +261,7 @@ font-size: 20px;
     transition: border-radius 1s ease-out;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     animation: morph 8s ease-in-out infinite both alternate;
+    -webkit-animation:morph 8s ease-in-out infinite both alternate ;
     position: absolute;
     overflow: hidden;
     z-index: 5;
@@ -284,6 +285,7 @@ font-size: 20px;
     text-align: center;
     text-transform: uppercase;
     animation: spin 12s ease-in-out infinite alternate-reverse;
+    -webkit-animation: spin 12s ease-in-out infinite alternate-reverse ;
     opacity: 1;
     z-index: 2;
 }
