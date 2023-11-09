@@ -9,7 +9,6 @@
 
     .nav-buttons {
         display: none;
-z-index: 1;
 
     }
 
@@ -27,7 +26,7 @@ z-index: 1;
     .menu-svg-button,
     .close-svg-button {
         display: block;
-        z-index: 4;
+        z-index: 1000;
     }
 
     .nav-ul {
@@ -43,7 +42,8 @@ z-index: 1;
     }
 
     .nav-buttons {
-        font-size: 24px;
+    z-index: 999;
+        font-size: 34px;
         display: block;
         /* position: absolute; */
         position: -webkit-sticky;
@@ -65,11 +65,7 @@ z-index: 1;
     }
 
 
-    .nav-ul li:hover {
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-    }
-
+    
     .nav-ul li:active {
         color: rgb(255, 255, 255);
 
@@ -81,7 +77,7 @@ z-index: 1;
 
 
     .active .nav-buttons {
-        transform: translateX(0px);
+       
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
@@ -145,7 +141,7 @@ z-index: 1;
     border-radius: 999%;
     position: absolute;
     overflow: hidden;
-    z-index: -1;
+    z-index: -3;
 }
 
 /* animation removed */
@@ -231,6 +227,7 @@ z-index: 2;
 
 
     .nav-ul li {
+        font-size: 34px;
         gap: 20px;
         transition: all ease 200ms;
     }
@@ -370,7 +367,7 @@ z-index: 2;
 /* Media query for smaller screens */
 @media (max-width: 767px) {
 
-
+ 
     .menu-svg-button,
     .close-svg-button {
         display: block;
@@ -384,6 +381,7 @@ z-index: 2;
 
 
     .nav-ul {
+      
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -393,7 +391,8 @@ z-index: 2;
     }
 
     .nav-buttons {
-        font-size: 24px;
+/* 
+        font-size: 34px; */
         display: block;
         position: fixed;
         width: 100%;
@@ -409,26 +408,14 @@ z-index: 2;
 
 
     .nav-ul li {
+        font-size: 28px;
         gap: 20px;
         transition: all ease 200ms;
-    }
-
-
-    .nav-ul li:hover {
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-    }
-
-    .nav-ul li:active {
-        color: rgb(255, 255, 255);
-
     }
 
     .navbar .profile-img-div {
         z-index: 1;
     }
-
-
 
 }
 

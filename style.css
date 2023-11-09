@@ -235,7 +235,7 @@ font-size: 20px;
 
 .box::before {
    
-    z-index: -1;
+    z-index: -3;
     content: "";
     position: absolute;
     top: 0;
@@ -249,6 +249,7 @@ font-size: 20px;
 }
 
 .spin-container {
+    /* z-index: -3; */
     width: 200px;
     height: 200px;
     -webkit-animation: spin 12s ease-in-out infinite alternate;
@@ -269,7 +270,7 @@ font-size: 20px;
     animation: morph 8s ease-in-out infinite both alternate;
     position: absolute;
     overflow: hidden;
-    z-index: 5;
+    z-index: -5;
 }
 
 .bd {
@@ -292,7 +293,7 @@ font-size: 20px;
     -webkit-animation: spin 12s ease-in-out infinite alternate-reverse ;
     animation: spin 12s ease-in-out infinite alternate-reverse;
     opacity: 1;
-    z-index: 2;
+    z-index: -2;
 }
 
 @keyframes morph {
