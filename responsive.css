@@ -153,6 +153,18 @@
 /* -------------------------------------- */
 
 
+
+
+/* bio container */
+.bio-container{
+    width: 80%;
+}
+
+.bio1{
+ font-size: 20px;
+}
+
+
 }
 
 
@@ -420,8 +432,16 @@ z-index: 2;
 }
 
 
-/* Media query for larger screens */
-@media (min-width: 768px) {}
+/* for small mobiles bio responsive */
+@media (max-width: 446px) {
+
+    .bio-container{
+        width: 90%;
+    }
+    
+
+
+}
 
 @media (min-width: 1025px) and (max-width: 1366px) and (orientation: landscape) {
     /* Your landscape tablet and small desktop styles here */
