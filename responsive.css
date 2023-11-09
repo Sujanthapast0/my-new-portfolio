@@ -165,6 +165,11 @@
 }
 
 
+.link a svg:hover{
+    scale: 1;
+   
+   }
+
 }
 
 
@@ -349,6 +354,12 @@ z-index: 2;
 }
 
 
+/* for bio container */
+.link a svg:hover{
+    scale: 1;
+   
+   }
+
 }
 
 
@@ -428,6 +439,8 @@ z-index: 2;
     .navbar .profile-img-div {
         z-index: 1;
     }
+
+
 
 }
 
