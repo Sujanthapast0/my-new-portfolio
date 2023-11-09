@@ -235,6 +235,7 @@ font-size: 20px;
 }
 
 .box::before {
+   
     z-index: -1;
     content: "";
     position: absolute;
@@ -372,15 +373,14 @@ font-family: 'Edu TAS Beginner', cursive;
 
 }
 
+.sujan {
+    background: linear-gradient(90deg, hsla(216, 96%, 56%, 1) 0%, hsla(178, 64%, 65%, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
 
-    .sujan {
-        background: linear-gradient(90deg, hsla(216, 96%, 56%, 1) 0%, hsla(178, 64%, 65%, 1) 100%);
-        -webkit-background-clip: text; 
-        background-clip: text;
-        color: transparent;
-        -webkit-text-fill-color: transparent; 
-    }
-    
 
 .my-name{
     /* font-family: 'Dancing Script', cursive; */
@@ -401,6 +401,7 @@ font-size:32px ;
 
 
 .navbar::before {
+    filter: blur(3px);
     z-index: -1;
     content: "";
     position: absolute;
@@ -418,7 +419,7 @@ font-size:32px ;
         box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
     }
     100% {
-        box-shadow: 0 0 20px rgba(52, 152, 219, 0.7);
+        box-shadow: 0 0 30px rgba(52, 152, 219, 0.7);
     }
 }
 
@@ -426,6 +427,7 @@ font-size:32px ;
 
 
 .navbar::after {
+    filter: blur(3px);
     z-index: -1;
     content: "";
     position: absolute;
@@ -435,23 +437,24 @@ font-size:32px ;
     left: 370px;
     rotate: 40deg;
     
-    border: 2px solid rgba(219, 52, 200, 0.5);
+    border: 2px solid rgba(52, 219, 60, 0.5);
     border-radius: 20%;
-    animation: bubbleGlow 2s infinite alternate-reverse;
+    animation: bubbleGlow1 2s infinite alternate-reverse;
 }
 
-@keyframes bubbleGlow {
+@keyframes bubbleGlow1 {
     0% {
         box-shadow: 0 0 5px rgba(219, 52, 200, 0.5);
     }
     100% {
-        box-shadow: 0 0 20px rgba(219, 52, 200, 0.5);
+        box-shadow: 0 0 30px rgba(219, 52, 200, 0.5);
     }
 }
 
 
 
 .nav-buttons::after {
+    filter: blur(3px);
     z-index: -1;
     content: "";
     position: absolute;
@@ -462,15 +465,15 @@ font-size:32px ;
     rotate: 40deg;
     border: 2px solid rgba(52, 219, 52, 0.5);
     border-radius: 20%;
-    animation: bubbleGlow 2s infinite alternate-reverse;
+    animation: bubbleGlow3 2s infinite alternate-reverse;
 }
 
-@keyframes bubbleGlow {
+@keyframes bubbleGlow3 {
     0% {
         box-shadow: 0 0 5px rgba(52, 219, 52, 0.5);
     }
     100% {
-        box-shadow: 0 0 20px rgba(52, 219, 52, 0.5);
+        box-shadow: 0 0 30px rgba(52, 219, 52, 0.5);
     }
 }
 
