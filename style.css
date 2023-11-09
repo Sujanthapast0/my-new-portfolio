@@ -253,7 +253,7 @@ font-size: 20px;
     width: 200px;
     height: 200px;
     -webkit-animation: spin 12s ease-in-out infinite alternate;
-    animation: spin 12s ease-in-out infinite alternate;
+    animation: spin1 12s ease-in-out infinite alternate;
     position: relative;
 }
 
@@ -263,7 +263,7 @@ font-size: 20px;
     -webkit-transition: border-radius 1s ease-out;
     transition: border-radius 1s ease-out;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    -webkit-animation: morph 8s ease-in-out infinite both alternate ;
+    -webkit-animation: morph1 8s ease-in-out infinite both alternate ;
     animation: morph 8s ease-in-out infinite both alternate;
     position: absolute;
     overflow: hidden;
@@ -302,14 +302,14 @@ font-size: 20px;
     }
 }
 
-@keyframes spin {
+@keyframes spin1 {
     to {
         transform: rotate(1turn);
     }
 }
 
 /* Vendor prefixes for iOS */
-@-webkit-keyframes morph {
+@-webkit-keyframes morph1 {
     0% {
         -webkit-border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
     }
