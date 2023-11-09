@@ -159,7 +159,6 @@ font-size: 20px;
     top: 105%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 #popupImage {
@@ -197,7 +196,7 @@ font-size: 20px;
 /* menu svg */
 
 .menu-svg-button, .close-svg-button {
-     
+    
     border: none;
     background: transparent;
     cursor: pointer;
@@ -248,24 +247,16 @@ font-size: 20px;
     -webkit-transform:  scale(1.42);
     transform: scale(1.42);
 }
-/* 
+
 .spin-container {
     width: 200px;
     height: 200px;
     -webkit-animation: spin 12s ease-in-out infinite alternate;
     animation: spin1 12s ease-in-out infinite alternate;
     position: relative;
-} */
-
-@supports (-webkit-animation: inherit) or (animation: inherit) {
-    .spin-container {
-        width: 200px;
-        height: 200px;
-        position: relative;
-        -webkit-animation: spin 12s ease-in-out infinite alternate;
-        animation: spin1 12s ease-in-out infinite alternate;
-    }
 }
+
+
 
 
 .shape {

@@ -9,13 +9,12 @@
 
     .nav-buttons {
         display: none;
-z-index: 2;
+z-index: 1;
 
     }
 
     .close-svg-button {
         display: none;
-
     }
 
     .navbar {
@@ -28,7 +27,7 @@ z-index: 2;
     .menu-svg-button,
     .close-svg-button {
         display: block;
-        z-index: 3;
+        z-index: 4;
     }
 
     .nav-ul {
@@ -37,7 +36,7 @@ z-index: 2;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        /* height: 100vh; */
+        height: 100vh;
         padding: 0%;
         margin: 0%;
 
@@ -86,6 +85,7 @@ z-index: 2;
         opacity: 1;
         visibility: visible;
         pointer-events: auto;
+        /* z-index: ; */
     }
 
 
@@ -135,6 +135,27 @@ z-index: 2;
 
 
 
+/* spining pic removed */
+
+
+.shape {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; */
+    border-radius: 999%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* animation removed */
+@keyframes morph {}
+@keyframes spin1 {}
+@-webkit-keyframes morph1 {}
+@-webkit-keyframes spin { }
+
+/* -------------------------------------- */
+
 
 }
 
@@ -177,7 +198,7 @@ z-index: 2;
 
     .menu-svg-button,
     .close-svg-button {
-        z-index: 3;
+        z-index: 4;
     }
 
     .nav-ul {
@@ -342,7 +363,7 @@ z-index: 2;
     .menu-svg-button,
     .close-svg-button {
         display: none;
-    }
+           }
 }
 
 
@@ -353,13 +374,12 @@ z-index: 2;
     .menu-svg-button,
     .close-svg-button {
         display: block;
-    
     }
 
     .close-svg-button {
         display: none;
         position: fixed;
-        left:685px;
+        right:10px;
     }
 
 
@@ -407,7 +427,11 @@ z-index: 2;
     .navbar .profile-img-div {
         z-index: 1;
     }
+
+
+
 }
+
 
 /* Media query for larger screens */
 @media (min-width: 768px) {}
