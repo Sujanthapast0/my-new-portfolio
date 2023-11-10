@@ -170,6 +170,51 @@
    
    }
 
+/* ABOUT ME PAGE CSS */
+   .about-me-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 210px 1fr;
+    }
+
+
+    .section1{
+        overflow-x: scroll;
+        height: 600PX;
+        padding: 0px 10px 10px 10px;
+        margin: 30px 10PX;
+        border-radius: 20px;
+        border: 2px solid black;
+        background-color: #adacac3f;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(5px);
+        }
+        
+
+        .about-me-container{
+         text-align: center;
+            height: 800px;
+           
+         }
+
+         .aboutme-H1{
+            margin-bottom:30px ;
+          padding-top: 10px;
+          padding-bottom: 5px;
+         }
+
+         .aboutme-header{
+       
+       
+    }
+
+
+    .aboutme-H1{
+        border: 1px solid rgb(255, 255, 255);
+     background:radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(173,172,172,1) 100%);
+     border-radius: 9px;
+    }
+    
+
 }
 
 
@@ -359,6 +404,24 @@ z-index: 2;
     scale: 1;
    
    }
+
+
+
+/* ABOUT ME PAGE RESPONSIVENESS CSS */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 

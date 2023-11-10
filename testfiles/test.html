@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+      z-index: 1000;
+    }
+
+    .content {
+      padding-top: 70px; /* Adjust this value to match the height of your navbar */
+    }
+
+    .section {
+      height: 150vh; /* Adjust this value as needed */
+      background-color: #f0f0f0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .section img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <!-- Your navbar content goes here -->
+    Navbar Content
+  </div>
+
+  <div class="content">
+    <div class="section">
+      <h2>Your Text Goes Here</h2>
+      <img src="your-image.jpg" alt="Your Image">
+    </div>
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      const content = document.querySelector('.content');
+
+      // Calculate the opacity based on the scroll position
+      const opacity = 1 - window.scrollY / 100;
+      navbar.style.backgroundColor = `rgba(255, 255, 255, ${opacity})`;
+
+      // Calculate the margin-top based on the scroll position
+      const marginTop = -window.scrollY + 'px';
+      content.style.marginTop = marginTop;
+    });
+  </script>
+
+</body>
+</html>

@@ -222,198 +222,12 @@ font-size: 20px;
 } */
 
 
-.container{
-    /* height: 90vh; */
-    margin-top: 100px;
-}
+
 /* -------------------------------------------------------------- */
-.img2{
-    height: 130px;
-    width: 130px;
-    object-fit: cover;
-    border-radius: 999rem;
-    animation: spin 12s ease-in-out infinite alternate-reverse;
-}
-/* ---------------------------------------------------- */
-.box {
-    border: 1px dashed rgba(255, 255, 255, 0.4);
-    position: relative;
-}
-
-.box::before {
-   
-    z-index: -3;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 50%;
-    border: 1px dashed rgba(255, 255, 255, 0.4);
-    -webkit-transform:  scale(1.42);
-    transform: scale(1.42);
-}
-
-.spin-container {
-    /* z-index: -3; */
-    width: 200px;
-    height: 200px;
-    -webkit-animation: spin 12s ease-in-out infinite alternate;
-    animation: spin1 12s ease-in-out infinite alternate;
-    position: relative;
-}
-
-
-
-
-.shape {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: border-radius 1s ease-out;
-    transition: border-radius 1s ease-out;
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    -webkit-animation: morph1 8s ease-in-out infinite both alternate ;
-    animation: morph 8s ease-in-out infinite both alternate;
-    position: absolute;
-    overflow: hidden;
-    z-index: -5;
-}
-
-.bd {
-    width: 142%;
-    height: 142%;
-    position: absolute;
-    left: -21%;
-    top: -21%;
-    background: url(2.jpeg);
-    background-size: 100%;
-    background-position: center center;
-    display: flex;
-    color: #003;
-    font-size: 5vw;
-    font-weight: bold;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    -webkit-animation: spin 12s ease-in-out infinite alternate-reverse ;
-    animation: spin 12s ease-in-out infinite alternate-reverse;
-    opacity: 1;
-    z-index: -2;
-}
-
-@keyframes morph {
-    0% {
-        border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
-    }
-    100% {
-        border-radius: 40% 60%;
-    }
-}
-
-@keyframes spin1 {
-    to {
-        transform: rotate(1turn);
-    }
-}
-
-/* Vendor prefixes for iOS */
-@-webkit-keyframes morph1 {
-    0% {
-        -webkit-border-radius: 40% 60% 60% 40% / 60% 30% 70% 40%;
-    }
-    100% {
-        -webkit-border-radius: 40% 60%;
-    }
-}
-
-@-webkit-keyframes spin {
-    to {
-        -webkit-transform: rotate(1turn);
-    }
-}
-
-/* ------------------------------------------------------- */
-.ionicon-play, .ionicon-pause{
-    height: 20px;
-    border: none;
-    background: transparent;
-    color: rgb(58, 57, 57);
-    display: flex;
-    align-items: center;
-    /* transform: translateY(4px); */
-    cursor: pointer;
-}
-
-.ionicon-play:hover{
-   
-    filter: drop-shadow(rgba(255,81,85,1) 100%) 1px 1px 1px;
-}
-
-.ionicon-pause:hover{
-   
-    filter: drop-shadow(rgba(255,81,85,1) 100%) 1px 1px 1px;
-}
-
-button{
-    background: transparent;
-   border: none;
-   padding: 0%;
-
-
-}
-
-.name-sec{
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
-
-
-.its-sujan-container{
-    /* margin-top: -5px;
-    transform: translateX(20px); */
-    padding-left: 80px;
-    gap: 10px;
-}
-
-
-.its-sujan{
-color: rgb(69, 69, 237);
-font-family: 'Edu TAS Beginner', cursive;
-
-}
-
-.sujan {
-    background: radial-gradient(circle, rgba(80,67,67,1) 0%, rgba(29,29,29,1) 97%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-}
-
-
-.my-name{
-    /* font-family: 'Dancing Script', cursive; */
-/* font-family: 'Edu TAS Beginner', cursive; */
-/* font-family: 'Roboto', sans-serif; */
-font-family: 'Tiro Devanagari Hindi', serif;
-/* font-family: 'VT323', monospace; */
-font-size:32px ;
-}
-
-/* *{
-    border: 1px solid rgba(0, 0, 0, 0.082);
-} */
-
-
 
 /* bubble effect */
-
-
 .navbar::before {
-    filter: blur(3px);
+    /* filter: blur(3px); */
     z-index: -1;
     content: "";
     position: absolute;
@@ -435,11 +249,8 @@ font-size:32px ;
     }
 }
 
-
-
-
 .navbar::after {
-    filter: blur(3px);
+    /* filter: blur(3px); */
     z-index: -1;
     content: "";
     position: absolute;
@@ -463,10 +274,8 @@ font-size:32px ;
     }
 }
 
-
-
 .nav-buttons::after {
-    filter: blur(3px);
+    /* filter: blur(3px); */
     z-index: -1;
     content: "";
     position: absolute;
@@ -489,85 +298,51 @@ font-size:32px ;
     }
 }
 
+/*About me css stle code starts here */
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,500&family=Montserrat:wght@200&family=Nunito+Sans:opsz@6..12&display=swap');
+
+/*  */
 
 
-
-/* ---------------------------------------------------- */
-.bio{
-    text-align: center;
-    font-size: 24px;
-    /* padding: 0px 500px; */
+.section1{
+height: auto;
+padding: 10px 40px 40px 40px;
+margin: 50px;
+border-radius: 20px;
+border: 2px solid black;
+background-color: #adacac3f;
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(5px);
 }
 
-.student{
-    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(241,17,102,1) 50%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+.about-me-container{
+   grid-template-columns:  200px 1fr;
+   height: 200px;
+  
+}
 
+.about-me-img{
+   height: 200px;
+width: 200px;
+  object-fit: cover;
+}
 
+.aboutme-img-container{
     overflow: hidden;
-    /* display: -webkit-box; */
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+}
+
+.aboutme-header{text-align: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -30px;
+    /* background-color: rgba(173, 172, 172, 0.248); */
+width: 100%;
+font-family: 'Archivo', sans-serif;
 }
 
 
-/* links footer */
 
-.bio-container{
-    width: 50%;
-    margin-bottom: 20px;
-}
-
-.links{
-    gap:50px;
-}
-
-.links:hover{
-    height: 50px;
-}
-
-.social-media-h1{
-    text-align: center;
-}
-
-
-.bio1{
-
-font-family: 'Tiro Devanagari Hindi', serif;
-cursor: pointer;
-}
-
-
-.bio2{
-    background:radial-gradient(circle, rgba(255,100,178,1) 29%, rgba(255,81,85,1) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-
-}
-
-.social-media-h1{
-   font-size: 20px;
-font-family: 'Raleway', sans-serif;
-color: rgb(75, 74, 74);
-
-}
-
-
-.social-links{
-    margin-top: 20px
-}
-
-.link a svg{
-color: #000000;
-    transition: all ease 200ms;
-}
-
-.link a svg:hover{
- scale: 1.2;
-
+*{
+    border: 1px solid rgba(0, 0, 0, 0.082);
 }
