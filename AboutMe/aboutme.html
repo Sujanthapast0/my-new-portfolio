@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about me</title>
+
+    <link rel="stylesheet" href="aboutme.css" />
+    <link rel="stylesheet" href="\utill.css" />
+    <link rel="stylesheet" href="\responsive.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar flex space-between align-center">
+      <!-- img div -->
+      <div class="profile-img-div flex align-center">
+        <img src="1.jpeg" alt="" srcset="" onclick="openModal()" />
+        <div class="nav-heading">IDkCONUNDRUM_</div>
+      </div>
+
+      <div class="nav-buttons">
+        <ul class="nav-ul">
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li><a href="http://">ABOUT ME</a></li>
+          <li><a href="http://">PORTFOLIO</a></li>
+          <li><a href="http://">CONTACT ME</a></li>
+        </ul>
+      </div>
+
+      <!-- options menu button -->
+      <button title="menu" class="menu-svg-button svg_button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-miterlimit="10"
+            stroke-width="32"
+            d="M80 160h352M80 256h352M80 352h352"
+          />
+        </svg>
+      </button>
+
+      <!-- close-menu button -->
+      <button title="close" class="close-svg-button svg_button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="ionicon"
+          viewBox="0 0 512 512"
+        >
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="32"
+            d="M368 368L144 144M368 144L144 368"
+          />
+        </svg>
+      </button>
+
+      <!-- popup box -->
+      <div class="modal" id="myModal">
+        <div class="modal-content">
+          <span class="close" id="closeModal" onclick="closeModalFunc()"
+            >&times; close</span
+          >
+          <img src="1.jpeg" alt="Image" id="popupImage" />
+        </div>
+      </div>
+    </nav>
+
+    <!--section starts here -->
+    <section></section>
+
+
+    <script src="\srcipt.js"></script>
+  </body>
+</html>
